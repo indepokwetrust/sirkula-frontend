@@ -1,13 +1,15 @@
 import React from 'react'
 import '../styles/Navbar.css'
 import logo from '../assets/logo.svg';
+import logo2 from '../assets/logo2.svg';
 import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
+  const isHome = location.pathname === '/';
   return (
-        <nav>
+        <nav className={isActive('/') ? 'blue_nav' : ''}>
             <div className="simbol-container">
                 <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
             </div>
@@ -25,7 +27,11 @@ function Navbar() {
             {/* Site logo */}
             {/* <label className="logo">Sagara</label> */}
             <div className="logo-container">
-                <img src={logo} alt="Logo" className="logo-img" />
+                <img
+                    src={isHome ? logo : logo2}
+                    alt="Logo"
+                    className="logo-img"
+                />
             </div>
 
             {/* Main navigation links */}

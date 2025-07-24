@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 nav {
-  background: #364C84;
+  background: #95B1EE; /* Please change this */
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+nav.blue_nav {
+  background: #364C84;
+}
+
 
 .logo-container {
   height: 80px;  /* atau sesuai tinggi navbar kamu */
@@ -42,7 +47,7 @@ nav ul li.right {
 }
 
 nav ul li a {
-  color: white;
+  color: #364C84;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -50,8 +55,20 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav.blue_nav ul li a {
+  color: white;          /* contoh: ubah warna teks */
+}
+
+
 a.active,
 a:hover {
+  background: #E7F1A8;
+  transition: .5s;
+  color: #364C84;
+}
+
+nav.blue_nav a.active,
+nav.blue_nav a:hover {
   background: #E7F1A8;
   transition: .5s;
   color: #364C84;

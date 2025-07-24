@@ -7,7 +7,7 @@ function Navbar() {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
   return (
-        <nav>
+        <nav className={isActive('/') ? 'blue_nav' : ''}>
             <div className="simbol-container">
                 <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
             </div>

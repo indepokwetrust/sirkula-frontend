@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 nav {
-  background: #364C84;
+  background: #FFFFFF; /* Please change this */
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav.blue_nav {
+  background: #364C84;
 }
 
 .logo-container {

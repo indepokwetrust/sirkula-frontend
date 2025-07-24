@@ -1,8 +1,11 @@
 import React from 'react'
 import '../styles/Navbar.css'
 import logo from '../assets/logo.svg';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
+  const isActive = (path) => location.pathname === path;
   return (
         <nav>
             <div className="simbol-container">
@@ -27,10 +30,18 @@ function Navbar() {
 
             {/* Main navigation links */}
             <ul>
-                <li><a className="active" href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="add-new-location">Donate</a></li>
-                <li><a href="#">Profile</a></li>
+                <li>
+                    <Link className={isActive('/') ? 'active' : ''} to="/">Home</Link>
+                </li>
+                <li>
+                    <Link className={isActive('/explore') ? 'active' : ''} to="/explore">Explore</Link>
+                </li>
+                <li>
+                    <Link className={isActive('/donate') ? 'active' : ''} to="/donate">Donate</Link>
+                </li>
+                <li>
+                    <Link className={isActive('/profile') ? 'active' : ''} to="/profile">Profile</Link>
+                </li>
             </ul>
     </nav>
   )

@@ -9,10 +9,10 @@ function Home() {
     <div className='main-container'>
       <Navbar />
 
-      <div class="white-circle">
+      <div className="white-circle">
         <img src={Ellipse8} alt="Ellipse8" className='white-1' />
       </div>
-
+      
     </div>
   )
 }

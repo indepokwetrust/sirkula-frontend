@@ -7,7 +7,18 @@
 }
 
 body {
-    background: #86BDF1;
-    background: #95B1EE;
     height: 100vh;
+}
+
+.main-container {
+    background: #95B1EE;
+    min-height: 100vh;
+}
+
+.yellow-circle {
+    border-radius: 1331px;
+    background: var(--Color-yellow-100, #E7F1A8);
+    filter: blur(200px);
+
+  
 }

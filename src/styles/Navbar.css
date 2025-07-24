@@ -7,15 +7,15 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;   /* vertikal tengah */
-  justify-content: center; /* horizontal tengah */
   height: 80px;  /* atau sesuai tinggi navbar kamu */
   padding-left: 50px; /* untuk memberi jarak dari kiri */
   padding-right: 20px; /* untuk memberi jarak dari kanan */
+  display: flex;
+  align-items: center;
 }
 
 .simbol-container {

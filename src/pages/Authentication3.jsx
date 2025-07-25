@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Authentication2.css';
+import '../styles/Authentication3.css';
 import authenticationImage from '../assets/authentication-image.png';
 import { useState } from 'react';
 import UMKM from '../assets/Vector.svg';

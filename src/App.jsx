@@ -11,6 +11,7 @@ import DetailRequest from './pages/DetailRequest.jsx'
 
 import Authentication from './pages/Authentication.jsx'
 import Authentication2 from './pages/Authentication2.jsx'
+import Authentication3 from './pages/Authentication3.jsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <Home />},
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   {path: '/detail-request', element: <DetailRequest />},
   {path: '/authentication', element: <Authentication />},
   {path: '/authentication2', element: <Authentication2 />},
+  {path: '/authentication3', element: <Authentication3 />}
 ])
 
 function App() {

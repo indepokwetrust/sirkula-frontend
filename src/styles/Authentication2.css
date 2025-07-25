@@ -1,6 +1,7 @@
-.authentication-page {
+.authentication2-page {
   display: flex;
   max-height: 100vh;
+  background-color: white;
 }
 
 .left-panel,
@@ -31,7 +32,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 
 .login-box {
@@ -126,4 +127,80 @@
   background: none;
   font-style: bold;
   text-decoration: underline;
+}
+
+.role-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.role-card {
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.role-card:hover, .role-card:active {
+    background-color: #e9ecefa6;
+    border-radius: 1px black;
+}
+
+/* Gaya saat hover */
+.role-card:hover {
+  background-color: rgba(0, 0, 0, 0.014);
+  border-color: #000000bb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.role-card.selected {
+  background-color: rgba(0, 0, 0, 0.014);
+  border-color: #000000bb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stepper {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  margin-top: 5rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.step {
+  width: 50%;
+  text-align: center;
+  color: #aaa;
+  position: relative;
+  size: 1.1rem;
+}
+
+.step.active {
+  color: #000;
+    font-weight: bold;
+}
+
+.progress-bar {
+  position: relative;
+  height: 4px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #d9ed92; /* warna hijau muda */
+  transition: width 0.3s ease;
 }

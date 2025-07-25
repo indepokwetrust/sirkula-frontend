@@ -1,8 +1,15 @@
 import React from 'react'
 import Navbar from '../section/Navbar'
 import '../styles/Explore.css'
+import { useNavigate } from 'react-router-dom';
 
 function Explore() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/detail');
+  };
+
   return (
     <div className='explore-container'>
         <div className='navbar-section'>
@@ -29,7 +36,7 @@ function Explore() {
                 <p>Name of Company</p>
                 <p><strong>Location</strong> <span>(distance m)</span></p>
                 <p><strong>Quantity</strong></p>
-                <button class="detail-btn">View Detail</button>
+                <button class="detail-btn"  onClick={handleClick} >View Detail</button>
               </div>
 
               <div class="waste-card">
@@ -45,7 +52,7 @@ function Explore() {
                 <p>Name of Company</p>
                 <p><strong>Location</strong> <span>(distance m)</span></p>
                 <p><strong>Quantity</strong></p>
-                <button class="detail-btn">View Detail</button>
+                <button class="detail-btn" >View Detail</button>
               </div>
             </main>
 

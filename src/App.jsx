@@ -2,15 +2,19 @@ import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home.jsx'
 import Explore from './pages/Explore.jsx'
+import MyRequest from './pages/MyRequest.jsx'
 // import AddNewLocation from './pages/AddNewLocation.jsx'
 // import Authentication from './pages/Authentication.jsx'
 // import Profile from './pages/Profile.jsx'
 // import PersonList from './pages/PersonList.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Detail from './pages/Detail.jsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <Home />},
-  {path: '/explore', element: <Explore />}
+  {path: '/explore', element: <Explore />},
+  {path: '/detail', element: <Detail />},
+  {path: '/my-request', element: <MyRequest />},
 ])
 
 function App() {

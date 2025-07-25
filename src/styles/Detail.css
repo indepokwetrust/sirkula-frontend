@@ -1,0 +1,156 @@
+.detail-page {
+    background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.back-arrow {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  margin-left: 5%;
+}
+
+.detail-header a {
+  margin-left: 5%;
+  margin-right: 2rem;
+}
+
+.detail-header h1 {
+  font-size: 2rem;
+  color: black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+.detail-content {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-card {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  width: 80%;
+  text-align: left;
+  width: 70%;
+  height: 60%;
+}
+
+.left-column {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-column h2 {
+  font-size: 1.8rem;
+  color: black;
+  text-align: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.right-column {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+.image-slider img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 450px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: -15px;
+}
+
+.arrow.right {
+  right: -15px;
+}
+
+.send-request {
+  margin-top: 2rem;
+  background-color: #364C84;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.send-request:hover {
+  background-color: #6c86c9;
+}
+
+.company-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: 1rem;
+}
+
+.location-info p {
+  margin: 0.3rem 0;
+}
+
+.detail-info p {
+  margin: 1rem 0;
+}
+
+.berat-info {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+    .company-name{
+        margin-top: 5%;
+    }
+}
+
